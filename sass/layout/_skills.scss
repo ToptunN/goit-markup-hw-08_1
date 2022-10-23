@@ -1,0 +1,41 @@
+@media screen and (min-width:1200px) {
+
+.main-skills {
+    padding-top: 0;
+}
+
+.skills {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+.images {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.skills-list {
+    position: relative;
+}
+.skills-label {
+    position: absolute;
+    @include flex;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    @include font(700, 14px, 16px, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--second-text-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}
+}
+@media screen and (max-width:1199px) {
+    .main-skills{
+        display: none;
+    }
+}

@@ -1,0 +1,35 @@
+.adresses {
+    @include font(400, 14px, 24px, 0.03em);  
+    font-style: normal;
+    text-align: center;
+}
+
+.contacts-list:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.post-address {
+    color: var(--second-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            color: #2196F3
+        }
+}
+.contacts-footer {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+                color: var(--accent-color);
+            }
+}
+@media screen and(min-width:1200px) {
+    .adresses{
+        text-align:left;
+    }
+    .post-address {
+        display: inline;
+}
+}
+

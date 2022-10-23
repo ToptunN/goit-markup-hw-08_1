@@ -1,0 +1,97 @@
+.footer-right-label {
+    margin-bottom: 20px;
+    @include font(700, 14px, 16px, 0.03em);
+    text-transform: uppercase;
+    color: var(--second-text-color);
+    text-align: center;
+}
+.sendout-subscription {
+    min-width: 450px;
+    min-height: 156px;
+    display: flex;
+    justify-content: center;
+}
+.subscription-button {
+    display: block;
+    position: relative;
+    min-width: 200px;
+    min-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    @include font(700, 16px,30px,0.06em);
+    text-align: center;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    border-color: transparent;
+    transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus {
+            background-color: var(--btn-bg-coor);
+            }
+}
+.subscription-text {
+    margin-right: 10px;
+}
+
+.subscription-button-icon {
+    position: absolute;
+    top: 50%;
+    left: auto;
+    width: 24px;
+    height: 24px;
+    transform: translateY(-50%);
+    padding: 0;
+    }
+
+.email-input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--second-text-color);
+
+        &::placeholder {
+            @include font(400, 16px, 20px, 0.03em);
+            color: rgba(255, 255, 255, 0.6);
+        }
+ }
+
+@media screen and (min-width:768px) {
+    .email-input {
+        width: 450px;
+    }
+    .sendout-subscription{
+        display: inline-block;
+        min-width: 570px;
+        min-height: 86px;
+    }
+    .subscription-label {
+        margin-left: 166px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .sendout-subscription {
+        justify-content: space-between;
+    }
+    .footer-right-label {
+        text-align: left;
+    }
+    .subscription-label {
+        margin-left: 0;
+        margin-right: 12px;
+    }
+    .email-input {
+        width: 358px;
+    }
+    .subscription-button {
+        display: inline;
+        margin-left: 0;
+}
+}

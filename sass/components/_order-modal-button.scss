@@ -1,0 +1,43 @@
+.modal-button {
+    display: block;
+    padding: 10px 24px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+    @include font(700, 16px, 30px, 0.06em);
+    color: #FFFFFF;
+    border-color: transparent;
+    background-color: var(--accent-color);
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover {
+            background-color: var(--btn-bg-coor);
+            color: var(--second-text-color);
+            }
+}
+
+@media screen and (min-width:1200px){
+    .modal-button{
+    padding: 10px 32px;
+    min-width: 216px;
+    }
+}
+
+// .modal-button {
+//     display: block;
+// @include font(700, 16px, 30px, 0.06em);
+//     border-radius: 4px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     color: #FFFFFF;
+//     border-color: transparent;
+//     background-color: var(--accent-color);
+//     cursor: pointer;
+//     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover {
+//         background-color: var(--btn-bg-coor);
+//         color: var(--second-text-color);
+//     }
+// }

@@ -1,0 +1,40 @@
+.modal.is-hidden {
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 450px;
+    min-height: 609px;
+    transform: translate(-50%, -50%);
+    background-color: var(--bcg-color);
+}
+
+.close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @extend %align;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    background-color: transparent;
+    transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+        }
+}
+@media screen and(min-width:1200px) {
+    .modal {
+       width: 528px;
+       height: 581px;    
+}
+}

@@ -1,0 +1,18 @@
+footer {
+    background-color: var(--bcgthird);
+}
+footer .logo {
+        display: block;
+        margin-bottom: 20px;
+        font-family: 'Raleway';
+        @include font(700, 24px, 28px, 0.03em);
+        text-align: center;
+    }
+
+@media screen and (min-width:1200px){
+    footer .logo{
+    @include font(700, 26px, 31px, 0.03em);
+    text-align: left;
+    }
+}
+
